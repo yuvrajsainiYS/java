@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <p>tod do list </p>
+        <input type="text" placeholder="enter_text" id="text">
+        <button onclick="add()">add</button>
+    </div>
+    <ul id="tagname">
+
+    </ul>
+    <script>
+     function add(){
+        let text = document.getElementById("text").value 
+        let tagname = document.getElementById("tagname")
+          let  li = document.createElement("li")
+           li.innerText=text
+           tagname.appendChild(li)
+            
+           
+         }
+     
+    </script>
+</body>
+</html>
